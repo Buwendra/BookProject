@@ -1,13 +1,27 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
+
 export default class App extends React.Component {
+
+
+  componentWillMount() {
+    const firebaseConfig = {
+      apiKey: "AIzaSyCSOdMPsmijyKurThkueks7L-P97EEXMv4",
+      authDomain: "bookapp-19925.firebaseapp.com",
+      databaseURL: "https://bookapp-19925.firebaseio.com",
+      projectId: "bookapp-19925",
+      storageBucket: "",
+      messagingSenderId: "994516693004"
+    }
+  }
+
   render() {
     return (
       <View style={styles.container}>
         <Text>Open up App.js to start working on your app!</Text>
         <Text>Changes you make will automatically reload.</Text>
-        <Text>Shake your phone to open the developer menu.</Text>
+        <Text>Testing project.</Text>
       </View>
     );
   }
